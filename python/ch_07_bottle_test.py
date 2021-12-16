@@ -16,7 +16,7 @@ def index(name='time'):
     dt     = datetime.now()
     time   = "{:%Y-%m-%d %H:%M:%S}".format(dt)
     tc, tf = get_temp()
-    return template('<b>time: {{t}}, cpu temp: {{tc}} deg C, {{tf}} deg F</b>',
+    return template('<b>TIME: {{t}},  CPU TEMP:  {{tc}} DEG C,  {{tf}} DEG F</b>',
                     t=time, tc=tc, tf=tf)
 
 run(host='0.0.0.0', port=80)
